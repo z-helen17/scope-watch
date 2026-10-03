@@ -105,27 +105,40 @@ function rollup(engagement, entries) {
   });
 }
 
+async function analyse() {
+  const { engagement, requests, entries } = loadMatter();
+  const requestQs = requestQuestions(engagement);
+  const timeQs = timeQuestions(engagement);
+  const names = Object.fromEntries(engagement.workstreams.map((w) => [w.id, w.name]));
+  const requestResponses = await Promise.all(requests.map(async (request) => ({ request, response: await ask({ subject: request.subject, message: request.body }, requestQs) })));
+  const entryResponses = await Promise.all(entries.map(async (entry) => ({ entry, response: await ask({ narrative: entry.narrative, timekeeper_role: entry.role }, timeQs) })));
+  const requestResults = requestResponses.map(({ request, response }) => requestResult(request, response.answers, names));
+  const entryResults = entryResponses.map(({ entry, response }) => entryResult(entry, response.answers, engagement.rates));
+  const workstreams = rollup(engagement, entryResults);
+  const flags = [
+    ...workstreams.filter((w) => w.rag !== 'green').map((w) => ({ severity: w.rag, title: `${w.name}: ${w.burn.toFixed(0)}% of budget spent, ${w.complete}% of work complete` })),
+    ...requestResults.filter((r) => r.severity === 'high').map((r) => ({ severity: 'red', title: `Out-of-scope request: ${r.subject}` })),
+    ...entryResults.filter((e) => e.issues.length).map((e) => ({ severity: 'amber', title: `Time entry needs attention: ${e.id}` }))
+  ];
+  return { matter: engagement.matter, workstreams, requests: requestResults, entries: entryResults, flags, calls: requests.length + entries.length };
+}
+
+// The demo matter never changes, so one live Jev run is reused instead of
+// spending the API key on every click: the function keeps the result in memory
+// (concurrent requests share one in-flight run) and the CDN caches it for a day.
+let cached = null;
+
 module.exports = async (req, res) => {
-  if (req.method !== 'POST') return res.status(405).json({ error: 'Use POST.' });
+  if (req.method !== 'GET') return res.status(405).json({ error: 'Use GET.' });
+  if (req.url.includes('?')) return res.status(400).json({ error: 'No parameters accepted.' });
   if (!process.env.TYPESAFE_API_KEY) return res.status(500).json({ error: 'TYPESAFE_API_KEY is not configured on this deployment.' });
   try {
-    const { engagement, requests, entries } = loadMatter();
-    const requestQs = requestQuestions(engagement);
-    const timeQs = timeQuestions(engagement);
-    const names = Object.fromEntries(engagement.workstreams.map((w) => [w.id, w.name]));
-    const requestResponses = await Promise.all(requests.map(async (request) => ({ request, response: await ask({ subject: request.subject, message: request.body }, requestQs) })));
-    const entryResponses = await Promise.all(entries.map(async (entry) => ({ entry, response: await ask({ narrative: entry.narrative, timekeeper_role: entry.role }, timeQs) })));
-    const requestResults = requestResponses.map(({ request, response }) => requestResult(request, response.answers, names));
-    const entryResults = entryResponses.map(({ entry, response }) => entryResult(entry, response.answers, engagement.rates));
-    const workstreams = rollup(engagement, entryResults);
-    const flags = [
-      ...workstreams.filter((w) => w.rag !== 'green').map((w) => ({ severity: w.rag, title: `${w.name}: ${w.burn.toFixed(0)}% of budget spent, ${w.complete}% of work complete` })),
-      ...requestResults.filter((r) => r.severity === 'high').map((r) => ({ severity: 'red', title: `Out-of-scope request: ${r.subject}` })),
-      ...entryResults.filter((e) => e.issues.length).map((e) => ({ severity: 'amber', title: `Time entry needs attention: ${e.id}` }))
-    ];
-    res.setHeader('Cache-Control', 'no-store');
-    return res.status(200).json({ matter: engagement.matter, workstreams, requests: requestResults, entries: entryResults, flags, calls: requests.length + entries.length });
+    if (!cached) cached = analyse().catch((error) => { cached = null; throw error; });
+    const result = await cached;
+    res.setHeader('Cache-Control', 'public, max-age=0, s-maxage=86400, stale-while-revalidate=86400');
+    return res.status(200).json(result);
   } catch (error) {
+    res.setHeader('Cache-Control', 'no-store');
     return res.status(500).json({ error: error.message });
   }
 };
