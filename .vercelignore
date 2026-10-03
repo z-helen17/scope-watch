@@ -1,0 +1,13 @@
+# The Python batch prototype remains in this folder as a reference implementation.
+# The hosted build uses public/, api/, data/ and package.json only.
+scope_watch/
+run.py
+evaluate.py
+local-server.js
+python-requirements.txt
+*.py
+__pycache__/
+output/
+.env
+.env.local
+node_modules/

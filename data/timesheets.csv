@@ -1,0 +1,45 @@
+id,date,timekeeper,role,hours,narrative,label_workstream,label_flag
+T01,2026-08-24,R. Patel,Associate,7.5,Review title commitments and ALTA surveys for the turbine and access road parcels; note title exceptions for the DD memo,dd,none
+T02,2026-08-25,R. Patel,Associate,8.0,"Review county conditional use permit, FAA determinations of no hazard and state environmental approvals; summarise conditions",dd,none
+T03,2026-08-26,M. Chen,Senior Associate,6.5,"Review ERCOT interconnection agreement, including milestone dates and security posting requirements",dd,none
+T04,2026-08-27,K. Brooks,Paralegal,7.0,Prepare index of the virtual data room and track missing documents,dd,none
+T05,2026-08-28,R. Patel,Associate,7.5,"Review turbine supply agreement: warranty package, liquidated damages and caps",dd,none
+T06,2026-08-31,M. Chen,Senior Associate,5.5,Review balance-of-plant and O&M agreements: termination rights and step-in provisions,dd,none
+T07,2026-09-01,R. Patel,Associate,6.0,Review PPA: offtaker termination events and assignment restrictions,dd,none
+T08,2026-09-02,M. Chen,Senior Associate,1.5,Call with Texas local counsel on recording of the access road easements,dd,none
+T09,2026-09-03,R. Patel,Associate,8.0,Draft DD memo sections on real estate and permits,dd,none
+T10,2026-09-04,M. Chen,Senior Associate,6.0,Draft DD memo sections on project contracts and red-flag summary,dd,none
+T11,2026-09-07,J. Whitaker,Partner,4.5,Review and comment on draft DD memo; call with client on red flags,dd,none
+T12,2026-09-08,R. Patel,Associate,5.0,Finalise DD memo and circulate to lenders,dd,none
+T13,2026-09-09,K. Brooks,Paralegal,3.0,Work on file,unclear,vague
+T14,2026-09-10,M. Chen,Senior Associate,4.5,Review ISDA schedule and hedge confirmation received from hedge provider; note issues for client,out_of_scope,none
+T15,2026-09-11,M. Chen,Senior Associate,7.0,"Mark up borrower comments on credit agreement: DSCR lock-up, equity cure, distribution conditions",facility,none
+T16,2026-09-11,J. Whitaker,Partner,3.0,Negotiation call with borrower's counsel on credit agreement financial covenants,facility,none
+T17,2026-09-14,R. Patel,Associate,6.5,Revise events of default and cross-default thresholds in credit agreement,facility,none
+T18,2026-09-15,M. Chen,Senior Associate,6.0,Prepare issues list on credit agreement for client,facility,none
+T19,2026-09-16,J. Whitaker,Partner,2.5,Review credit agreement turn and issues list; internal call,facility,none
+T20,2026-09-16,R. Patel,Associate,7.0,Draft pledge agreement over the borrower's membership interests,security,none
+T21,2026-09-17,R. Patel,Associate,7.5,Draft deed of trust over the wind leases and easements,security,none
+T22,2026-09-18,M. Chen,Senior Associate,6.0,Research Texas recording requirements for the deed of trust and fixture filings; note for file,security,none
+T23,2026-09-21,R. Patel,Associate,4.0,Review documents,unclear,vague
+T24,2026-09-22,M. Chen,Senior Associate,2.0,Research tax credit transfer mechanics under section 6418 and buyer recapture risk,out_of_scope,none
+T25,2026-09-22,R. Patel,Associate,6.5,Draft account control agreements for the project accounts,security,none
+T26,2026-09-23,M. Chen,Senior Associate,7.0,"Draft consents to collateral assignment for the PPA, turbine supply and O&M agreements",security,none
+T27,2026-09-24,J. Whitaker,Partner,3.5,Review collateral package drafts; call with collateral agent,security,none
+T28,2026-09-25,K. Brooks,Paralegal,2.5,Prepare closing checklist and populate initial status,cps,none
+T29,2026-09-28,M. Chen,Senior Associate,8.0,"Revise pledge agreement, deed of trust and account control agreements following borrower comments; call with title company on recording; update closing checklist",unclear,block
+T30,2026-09-29,M. Chen,Senior Associate,5.5,Revise consents to collateral assignment following PPA offtaker comments,security,none
+T31,2026-09-30,J. Whitaker,Partner,2.0,Attend sponsor call explaining the collateral structure,unclear,none
+T32,2026-10-01,M. Chen,Senior Associate,5.0,Draft ESG reporting covenant and incorporate into credit agreement,facility,none
+T33,2026-10-01,R. Patel,Associate,7.0,Second turn of credit agreement following negotiation call,facility,none
+T34,2026-10-02,R. Patel,Associate,3.5,Emails,unclear,vague
+T35,2026-10-05,M. Chen,Senior Associate,6.0,Negotiate collateral documents with borrower's counsel; revise drafts,security,none
+T36,2026-10-06,R. Patel,Associate,5.5,Prepare UCC-1 financing statements for filing with the Delaware Secretary of State,security,none
+T37,2026-10-07,J. Whitaker,Partner,3.0,Review revised collateral package and title company comments,security,none
+T38,2026-10-08,M. Chen,Senior Associate,1.5,Initial thoughts on intercreditor arrangements with proposed mezzanine lender,out_of_scope,none
+T39,2026-10-09,R. Patel,Associate,6.0,Revise credit agreement following borrower's third set of comments,facility,none
+T40,2026-10-12,M. Chen,Senior Associate,3.0,Review additional DD for two substation parcels added by the sponsor,unclear,none
+T41,2026-10-13,K. Brooks,Paralegal,2.0,Update closing checklist following delivery of the borrower's organisational documents,cps,none
+T42,2026-10-14,R. Patel,Associate,4.5,Draft outline of enforceability opinion,cps,none
+T43,2026-10-15,M. Chen,Senior Associate,5.0,Revise deed of trust and pledge agreement following title company and collateral agent comments,security,none
+T44,2026-10-15,J. Whitaker,Partner,2.0,Attention to matter,unclear,vague

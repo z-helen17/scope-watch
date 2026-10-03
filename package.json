@@ -1,0 +1,12 @@
+{
+  "name": "scope-watch",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "node local-server.js",
+    "start": "node local-server.js"
+  },
+  "devDependencies": {
+    "vercel": "latest"
+  }
+}

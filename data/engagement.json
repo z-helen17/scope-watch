@@ -1,0 +1,68 @@
+{
+  "matter": {
+    "code": "PRW-2026-014",
+    "name": "Project Prairie Ridge: senior construction and term financing of a 120 MW wind farm in West Texas",
+    "client": "Northgate Infrastructure Bank, as administrative agent, collateral agent and lender",
+    "firm_role": "Counsel to the lenders",
+    "borrower": "Prairie Ridge Wind LLC (Delaware project company)",
+    "sponsor": "Lone Mesa Renewables",
+    "currency": "USD",
+    "as_of": "2026-10-16",
+    "note": "Entirely fictional. Names, numbers and documents are invented for the Build with Jev challenge.",
+    "period_note": "Time entries cover 24 Aug to 15 Oct 2026. Fees billed before 24 Aug are carried in billed_before_period."
+  },
+  "rates": {
+    "Partner": 1150,
+    "Senior Associate": 850,
+    "Associate": 650,
+    "Paralegal": 325
+  },
+  "workstreams": [
+    {
+      "id": "dd",
+      "name": "Legal due diligence",
+      "description": "Legal due diligence on the project for the lenders: the borrower's organisational documents, real estate for the project site as defined in the term sheet (wind leases, easements, title commitments and ALTA surveys), existing federal, state and county permits, the ERCOT interconnection agreement, and the material project contracts (turbine supply, balance-of-plant, O&M, PPA). Includes the written due diligence memo and calls with Texas local counsel.",
+      "budget_fees": 81000,
+      "pct_complete": 95,
+      "billed_before_period": 24200
+    },
+    {
+      "id": "facility",
+      "name": "Credit agreement",
+      "description": "Drafting and negotiating the New York-law credit agreement for the lenders: financial covenants, distribution conditions, ESG and reporting covenants, events of default, and negotiation calls with borrower's counsel.",
+      "budget_fees": 121000,
+      "pct_complete": 70,
+      "billed_before_period": 45500
+    },
+    {
+      "id": "security",
+      "name": "Collateral package",
+      "description": "Drafting, negotiating and perfecting the lenders' collateral: pledge of the borrower's membership interests, deed of trust over the leases and easements, security agreement, account control agreements, consents to collateral assignment from project counterparties, and UCC and county recording filings to perfect them.",
+      "budget_fees": 74000,
+      "pct_complete": 45,
+      "billed_before_period": 12400
+    },
+    {
+      "id": "cps",
+      "name": "Conditions precedent and first funding",
+      "description": "Preparing and running the closing checklist, reviewing deliverables from the borrower, the lenders' enforceability opinion, and the first funding.",
+      "budget_fees": 48000,
+      "pct_complete": 20,
+      "billed_before_period": 4200
+    }
+  ],
+  "exclusions": [
+    "Hedging documentation (ISDA master agreement, schedules, confirmations) or advice on hedging",
+    "Tax advice, tax equity financing or tax credit transfer arrangements",
+    "Intercreditor, subordination or other arrangements with any mezzanine, tax equity or sponsor lender",
+    "Advice to the borrower or sponsor, or preparing documents on their side of the deal",
+    "Disputes, claims, litigation or arbitration",
+    "Applications for new permits, interconnection requests or other regulatory filings (reviewing existing permits is included)",
+    "Refinancing, or amendments and waivers after first funding"
+  ],
+  "billing_guidelines": [
+    "Each time entry must describe the specific task performed.",
+    "One task per entry: no block billing.",
+    "Time in 0.1 hour increments."
+  ]
+}

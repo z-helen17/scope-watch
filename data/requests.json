@@ -1,0 +1,194 @@
+[
+  {
+    "id": "R01",
+    "date": "2026-09-08",
+    "from": "Rachel Kim (Northgate)",
+    "subject": "Interconnection milestones",
+    "body": "Can you confirm the DD memo will cover the milestone dates and security posting requirements in the ERCOT interconnection agreement? Credit asked about it this morning.",
+    "label": {
+      "scope": "in_scope",
+      "workstream": "dd",
+      "note": "Interconnection agreement is named in the DD scope."
+    }
+  },
+  {
+    "id": "R02",
+    "date": "2026-09-10",
+    "from": "Rachel Kim (Northgate)",
+    "subject": "Hedge documents",
+    "body": "The hedge provider has sent over their draft ISDA schedule and a confirmation. Could you take a look and let us know if anything stands out?",
+    "label": {
+      "scope": "out_of_scope",
+      "workstream": null,
+      "note": "Hedging documentation is excluded."
+    }
+  },
+  {
+    "id": "R03",
+    "date": "2026-09-11",
+    "from": "David Okafor (Northgate)",
+    "subject": "DSCR lock-up",
+    "body": "Borrower's counsel is pushing back on the 1.10x lock-up and wants an equity cure. Please mark up their comments on the credit agreement and send us a short note on the position.",
+    "label": {
+      "scope": "in_scope",
+      "workstream": "facility",
+      "note": "Financial covenants sit in the credit agreement workstream."
+    }
+  },
+  {
+    "id": "R04",
+    "date": "2026-09-15",
+    "from": "Rachel Kim (Northgate)",
+    "subject": "Borrower resolutions",
+    "body": "To save time, could you prepare the borrower's written consent and officer's certificate approving the financing? Their counsel is slow.",
+    "label": {
+      "scope": "out_of_scope",
+      "workstream": null,
+      "note": "Borrower-side documents are excluded (and a conflict point)."
+    }
+  },
+  {
+    "id": "R05",
+    "date": "2026-09-17",
+    "from": "David Okafor (Northgate)",
+    "subject": "Substation parcels",
+    "body": "The sponsor has added two parcels for the substation that weren't in the original site plan. Can you extend the due diligence to cover them?",
+    "label": {
+      "scope": "unclear",
+      "workstream": "dd",
+      "note": "DD covers the project site as defined in the term sheet; new parcels extend it. Scope change to discuss."
+    }
+  },
+  {
+    "id": "R06",
+    "date": "2026-09-18",
+    "from": "Rachel Kim (Northgate)",
+    "subject": "Pledge agreement",
+    "body": "Please send us the latest draft pledge agreement so we can share it with the collateral agent.",
+    "label": {
+      "scope": "in_scope",
+      "workstream": "security",
+      "note": "Pledge is in the collateral workstream."
+    }
+  },
+  {
+    "id": "R07",
+    "date": "2026-09-22",
+    "from": "David Okafor (Northgate)",
+    "subject": "Tax credit transfer",
+    "body": "Quick one: will the sponsor's planned sale of the production tax credits under section 6418 work, and what is the buyer's recapture risk?",
+    "label": {
+      "scope": "out_of_scope",
+      "workstream": null,
+      "note": "Tax advice and tax credit transfers are excluded."
+    }
+  },
+  {
+    "id": "R08",
+    "date": "2026-09-24",
+    "from": "Rachel Kim (Northgate)",
+    "subject": "Mezzanine lender",
+    "body": "The sponsor wants to bring in a mezzanine lender later in construction. Could you draft a short intercreditor term sheet so we can react?",
+    "label": {
+      "scope": "out_of_scope",
+      "workstream": null,
+      "note": "Intercreditor arrangements are excluded."
+    }
+  },
+  {
+    "id": "R09",
+    "date": "2026-09-25",
+    "from": "David Okafor (Northgate)",
+    "subject": "Closing checklist",
+    "body": "Could you send the closing checklist with current status ahead of Monday's call?",
+    "label": {
+      "scope": "in_scope",
+      "workstream": "cps",
+      "note": "Closing checklist is in the CP workstream."
+    }
+  },
+  {
+    "id": "R10",
+    "date": "2026-09-29",
+    "from": "Rachel Kim (Northgate)",
+    "subject": "Sponsor call",
+    "body": "Can you join the sponsor call on Thursday and walk them through how the collateral structure works?",
+    "label": {
+      "scope": "unclear",
+      "workstream": "security",
+      "note": "Negotiating collateral is in scope, but explaining it to the sponsor is advice to the other side. Partner to decide."
+    }
+  },
+  {
+    "id": "R11",
+    "date": "2026-10-01",
+    "from": "David Okafor (Northgate)",
+    "subject": "ESG covenant",
+    "body": "Please add the ESG reporting covenant we agreed internally to the next turn of the credit agreement.",
+    "label": {
+      "scope": "in_scope",
+      "workstream": "facility",
+      "note": "ESG covenants are in the credit agreement workstream."
+    }
+  },
+  {
+    "id": "R12",
+    "date": "2026-10-05",
+    "from": "Rachel Kim (Northgate)",
+    "subject": "Contractor delay",
+    "body": "The balance-of-plant contractor is threatening to claim delay damages against the borrower. What are our options as lenders if this escalates?",
+    "label": {
+      "scope": "out_of_scope",
+      "workstream": null,
+      "note": "Disputes and claims are excluded."
+    }
+  },
+  {
+    "id": "R13",
+    "date": "2026-10-06",
+    "from": "David Okafor (Northgate)",
+    "subject": "Turbine warranties",
+    "body": "Does the DD memo cover the warranty package in the turbine supply agreement? Our independent engineer flagged it.",
+    "label": {
+      "scope": "in_scope",
+      "workstream": "dd",
+      "note": "Turbine supply agreement is a named material contract."
+    }
+  },
+  {
+    "id": "R14",
+    "date": "2026-10-08",
+    "from": "Rachel Kim (Northgate)",
+    "subject": "Deed of trust memo",
+    "body": "Our credit committee would like a short memo on how long foreclosure under a Texas deed of trust would take compared with a judicial foreclosure.",
+    "label": {
+      "scope": "unclear",
+      "workstream": "security",
+      "note": "The deed of trust is in scope, but an enforcement memo for credit committee is new work. Agree with client first."
+    }
+  },
+  {
+    "id": "R15",
+    "date": "2026-10-12",
+    "from": "David Okafor (Northgate)",
+    "subject": "Refinancing",
+    "body": "Assuming we close in December, could you start thinking about the structure for a refinancing in 2029?",
+    "label": {
+      "scope": "out_of_scope",
+      "workstream": null,
+      "note": "Refinancing is excluded."
+    }
+  },
+  {
+    "id": "R16",
+    "date": "2026-10-14",
+    "from": "Rachel Kim (Northgate)",
+    "subject": "Legal opinion",
+    "body": "Please prepare the draft enforceability opinion for the first funding.",
+    "label": {
+      "scope": "in_scope",
+      "workstream": "cps",
+      "note": "Legal opinion is in the CP workstream."
+    }
+  }
+]
